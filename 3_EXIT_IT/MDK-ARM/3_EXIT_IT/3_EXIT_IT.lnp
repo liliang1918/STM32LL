@@ -1,0 +1,15 @@
+--cpu=Cortex-M4.fp
+"3_exit_it\startup_stm32f407xx.o"
+"3_exit_it\main.o"
+"3_exit_it\gpio.o"
+"3_exit_it\sys.o"
+"3_exit_it\stm32f4xx_it.o"
+"3_exit_it\stm32f4xx_ll_gpio.o"
+"3_exit_it\stm32f4xx_ll_rcc.o"
+"3_exit_it\stm32f4xx_ll_utils.o"
+"3_exit_it\stm32f4xx_ll_exti.o"
+"3_exit_it\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "3_EXIT_IT\3_EXIT_IT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "3_EXIT_IT.map" -o 3_EXIT_IT\3_EXIT_IT.axf

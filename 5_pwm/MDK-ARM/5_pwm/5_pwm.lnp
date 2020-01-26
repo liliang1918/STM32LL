@@ -1,0 +1,17 @@
+--cpu=Cortex-M4.fp
+"5_pwm\startup_stm32f407xx.o"
+"5_pwm\main.o"
+"5_pwm\gpio.o"
+"5_pwm\sys.o"
+"5_pwm\tim.o"
+"5_pwm\stm32f4xx_it.o"
+"5_pwm\stm32f4xx_ll_gpio.o"
+"5_pwm\stm32f4xx_ll_tim.o"
+"5_pwm\stm32f4xx_ll_rcc.o"
+"5_pwm\stm32f4xx_ll_utils.o"
+"5_pwm\stm32f4xx_ll_exti.o"
+"5_pwm\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "5_pwm\5_pwm.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "5_pwm.map" -o 5_pwm\5_pwm.axf

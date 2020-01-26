@@ -1,0 +1,15 @@
+--cpu=Cortex-M4.fp
+"1_led\startup_stm32f407xx.o"
+"1_led\main.o"
+"1_led\gpio.o"
+"1_led\sys.o"
+"1_led\stm32f4xx_it.o"
+"1_led\stm32f4xx_ll_gpio.o"
+"1_led\stm32f4xx_ll_rcc.o"
+"1_led\stm32f4xx_ll_utils.o"
+"1_led\stm32f4xx_ll_exti.o"
+"1_led\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "1_LED\1_LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "1_LED.map" -o 1_LED\1_LED.axf

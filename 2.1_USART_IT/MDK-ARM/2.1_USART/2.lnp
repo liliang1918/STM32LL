@@ -1,0 +1,18 @@
+--cpu=Cortex-M4.fp
+"2.1_usart\startup_stm32f407xx.o"
+"2.1_usart\main.o"
+"2.1_usart\gpio.o"
+"2.1_usart\sys.o"
+"2.1_usart\usart.o"
+"2.1_usart\stm32f4xx_it.o"
+"2.1_usart\stm32f4xx_ll_gpio.o"
+"2.1_usart\stm32f4xx_ll_usart.o"
+"2.1_usart\stm32f4xx_ll_dma.o"
+"2.1_usart\stm32f4xx_ll_rcc.o"
+"2.1_usart\stm32f4xx_ll_utils.o"
+"2.1_usart\stm32f4xx_ll_exti.o"
+"2.1_usart\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "2.1_USART\2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "2.map" -o 2.1_USART\2.1_USART

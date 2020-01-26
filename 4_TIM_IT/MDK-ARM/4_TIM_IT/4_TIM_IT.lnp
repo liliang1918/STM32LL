@@ -1,0 +1,18 @@
+--cpu=Cortex-M4.fp
+"4_tim_it\startup_stm32f407xx.o"
+"4_tim_it\main.o"
+"4_tim_it\gpio.o"
+"4_tim_it\sys.o"
+"4_tim_it\tim.o"
+"4_tim_it\stm32f4xx_it.o"
+"4_tim_it\stm32f4xx_ll_gpio.o"
+"4_tim_it\stm32f4xx_ll_tim.o"
+"4_tim_it\stm32f4xx_ll_dma.o"
+"4_tim_it\stm32f4xx_ll_rcc.o"
+"4_tim_it\stm32f4xx_ll_utils.o"
+"4_tim_it\stm32f4xx_ll_exti.o"
+"4_tim_it\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "4_TIM_IT\4_TIM_IT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "4_TIM_IT.map" -o 4_TIM_IT\4_TIM_IT.axf
